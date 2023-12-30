@@ -168,7 +168,7 @@ echo "IP=$pp" > /var/lib/phantomshield-pro/ipvps.conf
 
 
 #THEME RED
-cat <<EOF>> /etc/hokagevpn/theme/red
+cat <<EOF>> /etc/phantomshield/theme/red
 BG : \E[40;1;41m
 TEXT : \033[0;31m
 EOF
