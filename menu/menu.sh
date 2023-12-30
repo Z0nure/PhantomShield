@@ -228,7 +228,7 @@ cekup=`uptime -p | grep -ow "day"`
 IPVPS=$(curl -s ipinfo.io/ip )
 serverV=$(curl -sS https://raw.githubusercontent.com/Z0nure/authpremium/main/versi)
 if [ "$Isadmin" = "ON" ]; then
-uis="${GREEN}Premium User$NC"
+uis="${GREEN}Premium User $Isadmin $NC"
 else
 uis="${RED}Free Version$NC"
 fi
