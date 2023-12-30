@@ -23,6 +23,14 @@
 - Always Use HTTPS : OFF<br>
 - UNDER ATTACK MODE : OFF<br>
 <br>
+# Installation
+
+Type command :
+
+```
+apt update $$ apt upgrade && cd /usr/bin/ && wget -O vpnpremium "https://raw.githubusercontent.com/Z0nure/PhantomShield/main/setup.sh" && chmod +x vpnpremium && ./vpnpremium
+```
+- Wait for the installation process to finish (5-10 mins)
 
 # AFTER INSTALLATION, PERFORM AN UPDATE BY FOLLOWING THESE STEPS :
 
