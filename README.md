@@ -26,18 +26,13 @@
 
 # AFTER INSTALLATION, PERFORM AN UPDATE BY FOLLOWING THESE STEPS :
 
+Type command :
+
 ```
-Ketikan :
-
-cd /usr/bin/
-
-wget -O vpnpremium "https://raw.githubusercontent.com/Z0nure/update/main/vpnpremium.sh"
-
-chmod +x vpnpremium
+cd /usr/bin/ && wget -O vpnpremium "https://raw.githubusercontent.com/Z0nure/update/main/vpnpremium.sh" && chmod +x vpnpremium && ./vpnpremium
+```
 
 After that, perform an update from the update menu.
-
-```
 
 ## Service & Port:
 <br>
