@@ -206,6 +206,7 @@ curl -o /usr/bin/wlc https://raw.githubusercontent.com/Z0nure/PhantomShield/main
 
 # Fetch the raw content of the 'info' file and save it to /usr/bin as info
 curl -o /usr/bin/info2 https://raw.githubusercontent.com/Z0nure/PhantomShield/main/backup/info2
+dos2unix info2
 
 # Set permissions for the downloaded files
 chmod +x /usr/bin/wlc
