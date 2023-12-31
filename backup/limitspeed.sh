@@ -70,7 +70,7 @@ elif [[ "$num" = "2" ]]; then
 stop
 else
 clear
-echo " You Entered The Wrong Number"
+echo " Invalid Input"
 menu
 fi
 

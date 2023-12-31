@@ -355,5 +355,5 @@ case $opt in
 04 | 4) clear ; cektrojan ;;
 05 | 5) clear ; userlist ;;
 00 | 0) clear ; menu ;;
-*) clear ; add-tr ;;
+*) echo "Invalid Input" ; sleep 1 ; clear ; add-tr ;;
 esac

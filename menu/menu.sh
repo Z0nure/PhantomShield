@@ -324,5 +324,5 @@ case $opt in
 16 | 16) clear ; info ;;
 100) clear ; $up2u ;;
 00 | 0) clear ; menu ;;
-*) clear ; menu ;;
+*) echo "Invalid Input" ; sleep 1; clear ; menu ;;
 esac

@@ -1,5 +1,5 @@
 #!/bin/bash
-# Hokage Legend
+# Phantom Shield
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -14,7 +14,7 @@ LIGHT='\033[0;37m'
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$( curl ipinfo.io/ip | grep $MYIP )
+IZIN=$(curl -sS https://raw.githubusercontent.com/Z0nure/access/main/auth | awk '{print $4}' | grep $MYIP)
 if [ $MYIP = $MYIP ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else

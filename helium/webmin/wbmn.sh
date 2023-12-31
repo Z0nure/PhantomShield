@@ -2,7 +2,7 @@
 # =========================================
 # Quick Setup | Script Setup Manager
 # Edition : Stable Edition 1.0
-# Auther  : Hokage Legend
+# Author  : Phantom Shield
 # (C) Copyright 2023
 # =========================================
 clear
@@ -81,7 +81,7 @@ elif [[ "$num" = "0" ]]; then
 m-system
 else
 clear
-echo " You Entered The Wrong Number"
+echo " Invalid Input"
 wbmn
 fi
 

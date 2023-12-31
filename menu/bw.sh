@@ -201,7 +201,7 @@ exit
 ;;
 *)
 echo -e ""
-echo -e "You pressed the wrong key"
+echo -e "Invalid Input"
 sleep 1
 bw
 ;;

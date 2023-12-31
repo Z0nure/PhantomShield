@@ -137,7 +137,7 @@ Save_And_Exit () {
     git commit -m backup &> /dev/null
     git branch -M main &> /dev/null
     git remote add origin https://github.com/Z0nure/backup
-    git push -f https://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@github.com/Z0nure/backup.git &> /dev/null
+    git push -f https://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@github.com/Z0nure/backup.git &> /dev/null
 }
 
 if [ ! -d "/root/user-backup/" ]; then
@@ -165,7 +165,7 @@ echo -e "$COLOR1│${NC}  The following is a link to your vps data backup file.
 $COLOR1│${NC}  Your VPS IP $IP
 $COLOR1│${NC}
 $COLOR1│${NC}  $link
-$COLOR1│${NC}  save the link pliss!
+$COLOR1│${NC}  save the link please!
 $COLOR1│${NC}
 $COLOR1│${NC}  If you want to restore data, please enter the link above.
 $COLOR1│${NC}  Thank You For Using Our Services"

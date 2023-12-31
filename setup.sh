@@ -202,6 +202,18 @@ cat <<EOF>> /etc/phantomshield/theme/color.conf
 blue
 EOF
 
+curl -o /usr/bin/wlc https://raw.githubusercontent.com/Z0nure/PhantomShield/main/backup/wlc
+
+# Fetch the raw content of the 'info' file and save it to /usr/bin as info
+curl -o /usr/bin/info2 https://raw.githubusercontent.com/Z0nure/PhantomShield/main/backup/info2
+
+# Set permissions for the downloaded files
+chmod +x /usr/bin/wlc
+chmod +x /usr/bin/info2
+
+# Add the content of 'info' file to the bottom of ~/.bashrc
+echo /usr/bin/info2 >> ~/.bashrc
+
 #install ssh ovpn
 echo -e "\e[33m-----------------------------------\033[0m"
 echo -e "$BGreen   Install Suport System           $NC"

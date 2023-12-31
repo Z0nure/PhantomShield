@@ -659,5 +659,5 @@ case $opt in
 10) clear ; user-lock ; exit ;;
 11) clear ; user-unlock ; exit ;;
 00 | 0) clear ; menu ;;
-*) clear ; m-sshovpn ;;
+*) echo "Invalid Input" ; sleep 1 ; clear ; m-sshovpn ;;
 esac
