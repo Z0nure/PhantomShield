@@ -213,7 +213,7 @@ chmod +x /usr/bin/wlc
 chmod +x /usr/bin/info2
 
 # Add the content of 'info' file to the bottom of ~/.bashrc
-if [[ -e /usr/bin/info2 && ! $(grep -qxF '/usr/bin/info2' ~/.bashrc) ]]; then
+if [ -e /usr/bin/info2 ] && ! grep -qxF '/usr/bin/info2' ~/.bashrc; then
     echo '/usr/bin/info2' >> ~/.bashrc
 fi
 
