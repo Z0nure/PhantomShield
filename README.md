@@ -29,7 +29,7 @@
 Type command :
 
 ```
-apt update $$ apt upgrade && cd /usr/bin/ && wget -O vpnpremium "https://raw.githubusercontent.com/Z0nure/PhantomShield/main/setup.sh" && chmod +x vpnpremium && ./vpnpremium
+apt update && apt upgrade -y && cd /usr/bin/ && wget -O vpnpremium "https://raw.githubusercontent.com/Z0nure/PhantomShield/main/setup.sh" && chmod +x vpnpremium && ./vpnpremium
 ```
 - Wait for the installation process to finish (5-10 mins)
 
