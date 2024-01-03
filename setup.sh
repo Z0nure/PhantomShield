@@ -104,7 +104,6 @@ if [ "$BASH" ]; then
 fi
 
 mesg n || true
-clear
 END
 chmod 644 /root/.profile
 
@@ -205,17 +204,14 @@ EOF
 curl -o /usr/bin/wlc https://raw.githubusercontent.com/Z0nure/PhantomShield/main/backup/wlc
 
 # Fetch the raw content of the 'info' file and save it to /usr/bin as info
-curl -o /usr/bin/info2 https://raw.githubusercontent.com/Z0nure/PhantomShield/main/backup/info2
-dos2unix info2
+curl -o /etc/update-motd.d/69-wlc https://raw.githubusercontent.com/Z0nure/PhantomShield/main/backup/info2
+dos2unix /etc/update-motd.d/69-wlc
 
 # Set permissions for the downloaded files
 chmod +x /usr/bin/wlc
-chmod +x /usr/bin/info2
+chmod +x /etc/update-motd.d/69-wlc
 
 # Add the content of 'info' file to the bottom of ~/.bashrc
-if [ -e /usr/bin/info2 ] && ! grep -qxF '/usr/bin/info2' ~/.bashrc; then
-    echo '/usr/bin/info2' >> ~/.bashrc
-fi
 
 #install ssh ovpn
 echo -e "\e[33m-----------------------------------\033[0m"
@@ -321,7 +317,6 @@ if [ "$BASH" ]; then
 fi
 
 mesg n || true
-clear
 menu
 END
 chmod 644 /root/.profile
